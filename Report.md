@@ -1,4 +1,4 @@
-github : https://github.com/ku1248/ESL_HW1
+github : https://github.com/ku1248/ESL_HW4
 
 General description or introduction of the problem and your solution：
   Homework 1 required us to do Gaussian blur filter with sending or receiving data in a row-based fashion. In Lab 2 we have finished sobel filter but without row-based fashion. Since Gaussian blur filter can implement similar to sobel filter, we should fix how we send and receive data ,and also fix the filter from sobel to Gaussian blur. The solution I use is to read image pixels row by row and save them into buffer in Testbench first. And then send them to Gaussian blur filter in order. While sending pixels in order, Gaussian blur filter can finish calculation in correct order. Repeating this process, we can finish Gaussian blur to whole image.
